@@ -1,9 +1,8 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-
-const Login = () => {
-
+const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
+
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
   };
@@ -12,9 +11,9 @@ const Login = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       // Handle form submission logic here
-    };              
+    };
 
-    const form = document.getElementById('login-form');
+    const form = document.getElementById('signup-form');
     if (form) {
       form.addEventListener('submit', handleSubmit);
     }
@@ -24,13 +23,17 @@ const Login = () => {
         form.removeEventListener('submit', handleSubmit);
       }
     };
-  }, []); 
+  }, []);
 
   return (
     <>
       <div style={styles.container}>
-        <form id="login-form" style={styles.form}>
-          <h2 style={styles.heading}>Login</h2>
+        <form id="signup-form" style={styles.form}>
+          <h2 style={styles.heading}>Sign Up</h2>
+          <label style={styles.label}>
+            Username:
+            <input style={styles.input} type="text" required />
+          </label>
           <label style={styles.label}>
             Email:
             <input style={styles.input} type="email" required />
@@ -49,12 +52,16 @@ const Login = () => {
                 role="img"
                 aria-label="Toggle Password Visibility"
               >
-                {showPassword ? <i class="fa-solid fa-eye"></i> : <i class="fa-sharp fa-solid fa-eye-slash"></i>}
+                {showPassword ? (
+                  <i className="fa-solid fa-eye"></i>
+                ) : (
+                  <i className="fa-sharp fa-solid fa-eye-slash"></i>
+                )}
               </span>
             </div>
           </label>
           <button style={styles.button} type="submit">
-            Log In
+            Sign Up
           </button>
         </form>
       </div>
@@ -72,12 +79,12 @@ const styles = {
   form: {
     width: '700px',
     padding: '20px',
-    border: '1px solid #ccc',
+    border: '2px solid #ccc',
     borderRadius: '50px',
     boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
   },
   heading: {
-    fontSize: '24px',
+    fontSize: '26px',
     marginBottom: '20px',
     textAlign: 'center',
   },
@@ -109,15 +116,11 @@ const styles = {
   },
   eyeIcon: {
     position: 'absolute',
-    top: '45%',
+    top: '43%',
     right: '15px',
     transform: 'translateY(-50%)',
     cursor: 'pointer',
   },
 };
 
-export default Login;
-
-
-
-// // components/SignUp.js
+export default SignUp;

@@ -5,12 +5,14 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import Header from './header'
 import Footer from './footer'
 import Login from './login'
+import SignUp from './singup'
 
 export default function Home() {
   return (
     <>
       <Header/>
       <Login/>
+      <SignUp/>
       <Footer/>
     </>
   )

@@ -2,7 +2,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-dark text-white text-center " style={{ backgroundColor: '#1c2331' }}>
-      <section className="d-flex p-3" style={{ backgroundColor: '#6351ce' }}>
+      <section className="d-flex p-3" style={{ backgroundColor: '#39364f' }}>
         <div className="me-5">
           <span>Get connected with us on social networks:</span>
         </div>
