@@ -7,24 +7,6 @@ const SignUp = () => {
     setShowPassword(!showPassword);
   };
 
-  useEffect(() => {
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Handle form submission logic here
-    };
-
-    const form = document.getElementById('signup-form');
-    if (form) {
-      form.addEventListener('submit', handleSubmit);
-    }
-
-    return () => {
-      if (form) {
-        form.removeEventListener('submit', handleSubmit);
-      }
-    };
-  }, []);
-
   return (
     <>
       <div style={styles.container}>
@@ -79,7 +61,7 @@ const styles = {
   form: {
     width: '700px',
     padding: '20px',
-    border: '2px solid #ccc',
+    border: '1px solid #ccc',
     borderRadius: '50px',
     boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
   },

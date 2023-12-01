@@ -110,4 +110,15 @@ const Footer = () => {
 export default Footer;
 
 
+{/* <form className="d-flex " role="search">
+              <input
+                className="form-control me-2 fs-4 "
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              ></input>
+              <button className="btn btn-outline-success me-5" type="submit">
+                Search
+              </button>
+            </form> */}
 

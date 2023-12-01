@@ -8,24 +8,6 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
 
-  useEffect(() => {
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Handle form submission logic here
-    };              
-
-    const form = document.getElementById('login-form');
-    if (form) {
-      form.addEventListener('submit', handleSubmit);
-    }
-
-    return () => {
-      if (form) {
-        form.removeEventListener('submit', handleSubmit);
-      }
-    };
-  }, []); 
-
   return (
     <>
       <div style={styles.container}>
@@ -118,6 +100,3 @@ const styles = {
 
 export default Login;
 
-
-
-// // components/SignUp.js

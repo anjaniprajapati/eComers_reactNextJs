@@ -1,8 +1,7 @@
 const Header = () => {
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-        {/* <div className="container-fluid"> */}
-        {/* <img src="loloA.jpg" style={{ height: '40px' }} alt="Logo"></img> */}
+        {/* <img src="logo4.png" style={{ height: '40px',marginLeft: '5px' }} alt="Logo"></img> */}
         <div className="container">
           <a className="navbar-brand " href="#">
             E-Commerce
@@ -70,39 +69,38 @@ const Header = () => {
                 <a className="nav-link disabled">Disabled</a>
               </li>
             </ul>
-            <form className="d-flex " role="search">
-              <input
-                className="form-control me-2 fs-4 "
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              ></input>
-              <button className="btn btn-outline-success me-5" type="submit">
-                Search
-              </button>
+            <form className="d-flex" role="search">
+              <div className="input-group">
+                <input
+                  className="form-control fs-5"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button className="btn btn-outline-white bg-white" type="submit" >
+                  <i class="fa-solid fa-magnifying-glass"style={{ fontSize: '28px', marginRight: '5px' }}></i>         
+                </button>
+              </div>
             </form>
-            {/* <div className="d-flex">
-              <a href="/login" className="btn btn-outline-light me-2">
-                Login
-              </a>
-              <a href="/signup" className="btn btn-outline-light ">
-                Sign Up
-              </a>
-            </div> */}
-            {/* <img src="loloA.jpg" style={{ height: '40px' }} alt="Logo"></img> */}
           </div>
         </div>
+        <a href="/Cart" style={{ textDecoration: 'none', marginRight: '100px', color: 'white' }}>
+          <i className="fa-sharp fa-solid fa-cart-plus" style={{ fontSize: '28px', marginRight: '5px' }}></i>
+          Cart
+        </a>
         <div className="d-flex">
-              <a href="/login" className="btn btn-outline-light me-2">
-                Login
-              </a>
-              <a href="/signup" className="btn btn-outline-light ">
+              <a href="/signup" style={{ textDecoration: 'none', color: 'white', marginRight: '15px' }}><i class="fa-solid fa-user-plus" style={{ fontSize: '19px', marginRight: '5px' }}></i>
                 Sign Up
               </a>
-            </div>
+              <a href="/login" style={{ textDecoration: 'none',marginRight: '15px', color: 'white' }}><i className="fas fa-sign-in-alt"style={{ fontSize: '19px', marginRight: '5px' }}></i>
+                Login
+              </a>             
+          </div>
       </nav>
     );
   };
   
   export default Header;
   
+
+
