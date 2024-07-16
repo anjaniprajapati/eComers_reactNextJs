@@ -9,10 +9,10 @@ const Slider = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="s.webp" className="d-block w-100" alt="Slide 1" height="400px" width="700px"/>
+            <img src="https://sportsun.in/cdn/shop/files/slider-3.jpg?v=1683797931" className="d-block w-100" alt="Slide 1" height="400px" width="700px"/>
           </div>
           <div className="carousel-item">
-            <img src="s2.webp" className="d-block w-100" alt="Slide 2" height="400px" width="700px"/>
+            <img src="https://ziener.com/media/k2/items/cache/7f56ca91ae4eb82b8754d752cd736c76_XL.jpg" className="d-block w-100" alt="Slide 2" height="400px" width="700px"/>
           </div>
           <div className="carousel-item">
             <img src="a.jpeg" className="d-block w-100" alt="Slide 3" height="400px" width="700px"/>
